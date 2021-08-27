@@ -1,0 +1,340 @@
+/****************************************************************
+ *
+ *  Install the SCSS styles in one file
+ *
+****************************************************************/
+/****************************************************************
+ *
+ *  Rogue codeblock theme configuration
+ *
+****************************************************************/
+.highlight { padding: 16px; background: #222; color: #eee; border-radius: 16px; }
+
+.highlight .hll { background-color: #ffffcc; }
+
+.highlight .c { color: #6a737d; }
+
+/* Comment */
+/* Error */
+.highlight .k { color: #d73a49; }
+
+/* Keyword */
+/* Operator */
+.highlight .ch { color: #6a737d; }
+
+/* Comment.Hashbang */
+.highlight .cm { color: #6a737d; }
+
+/* Comment.Multiline */
+.highlight .cp { color: #d73a49; }
+
+/* Comment.Preproc */
+.highlight .cpf { color: #032f62; }
+
+/* Comment.PreprocFile */
+.highlight .c1 { color: #6a737d; }
+
+/* Comment.Single */
+.highlight .cs { color: #6a737d; }
+
+/* Comment.Special */
+.highlight .gd { color: #b31d28; background-color: #ffeef0; }
+
+/* Generic.Deleted */
+/* Generic.Emph */
+/* Generic.Error */
+.highlight .gh { color: #005cc5; }
+
+/* Generic.Heading */
+.highlight .gi { color: #22863a; background-color: #f0fff4; }
+
+/* Generic.Inserted */
+/* Generic.Output */
+/* Generic.Prompt */
+.highlight .gs { font-weight: bold; }
+
+/* Generic.Strong */
+.highlight .gu { color: #6f42c1; font-weight: bold; }
+
+/* Generic.Subheading */
+.highlight .gt { color: #0044DD; }
+
+/* Generic.Traceback */
+.highlight .kc { color: #005cc5; }
+
+/* Keyword.Constant */
+.highlight .kd { color: #d73a49; }
+
+/* Keyword.Declaration */
+.highlight .kn { color: #d73a49; }
+
+/* Keyword.Namespace */
+.highlight .kp { color: #d73a49; }
+
+/* Keyword.Pseudo */
+.highlight .kr { color: #d73a49; }
+
+/* Keyword.Reserved */
+.highlight .kt { color: #d73a49; }
+
+/* Keyword.Type */
+.highlight .m { color: #666666; }
+
+/* Literal.Number */
+.highlight .s { color: #032f62; }
+
+/* Literal.String */
+/* Name.Attribute */
+.highlight .nb { color: #005cc5; }
+
+/* Name.Builtin */
+.highlight .nc { color: #6f42c1; }
+
+/* Name.Class */
+.highlight .no { color: #005cc5; }
+
+/* Name.Constant */
+.highlight .nd { color: #6f42c1; }
+
+/* Name.Decorator */
+.highlight .ni { color: #005cc5; }
+
+/* Name.Entity */
+.highlight .ne { color: #005cc5; }
+
+/* Name.Exception */
+.highlight .nf { color: #6f42c1; }
+
+/* Name.Function */
+.highlight .nl { color: #005cc5; }
+
+/* Name.Label */
+.highlight .nn { color: #6f42c1; }
+
+/* Name.Namespace */
+.highlight .nt { color: #22863a; }
+
+/* Name.Tag */
+.highlight .nv { color: #24292e; }
+
+/* Name.Variable */
+.highlight .ow { color: #d73a49; }
+
+/* Operator.Word */
+.highlight .w { color: #bbbbbb; }
+
+/* Text.Whitespace */
+.highlight .mb { color: #005cc5; }
+
+/* Literal.Number.Bin */
+.highlight .mf { color: #005cc5; }
+
+/* Literal.Number.Float */
+.highlight .mh { color: #005cc5; }
+
+/* Literal.Number.Hex */
+.highlight .mi { color: #005cc5; }
+
+/* Literal.Number.Integer */
+.highlight .mo { color: #005cc5; }
+
+/* Literal.Number.Oct */
+.highlight .sa { color: #d73a49; }
+
+/* Literal.String.Affix */
+.highlight .sb { color: #032f62; }
+
+/* Literal.String.Backtick */
+.highlight .sc { color: #032f62; }
+
+/* Literal.String.Char */
+.highlight .dl { color: #d73a49; }
+
+/* Literal.String.Delimiter */
+.highlight .sd { color: #032f62; }
+
+/* Literal.String.Doc */
+.highlight .s2 { color: #032f62; }
+
+/* Literal.String.Double */
+.highlight .se { color: #032f62; }
+
+/* Literal.String.Escape */
+.highlight .sh { color: #032f62; }
+
+/* Literal.String.Heredoc */
+.highlight .si { color: #005cc5; }
+
+/* Literal.String.Interpol */
+.highlight .sx { color: #032f62; }
+
+/* Literal.String.Other */
+.highlight .sr { color: #032f62; }
+
+/* Literal.String.Regex */
+.highlight .s1 { color: #032f62; }
+
+/* Literal.String.Single */
+.highlight .ss { color: #005cc5; }
+
+/* Literal.String.Symbol */
+.highlight .bp { color: #005cc5; }
+
+/* Name.Builtin.Pseudo */
+.highlight .fm { color: #005cc5; }
+
+/* Name.Function.Magic */
+.highlight .vc { color: #24292e; }
+
+/* Name.Variable.Class */
+.highlight .vg { color: #24292e; }
+
+/* Name.Variable.Global */
+.highlight .vi { color: #24292e; }
+
+/* Name.Variable.Instance */
+.highlight .vm { color: #005cc5; }
+
+/* Name.Variable.Magic */
+.highlight .il { color: #005cc5; }
+
+/* Literal.Number.Integer.Long */
+/* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
+.highlight .lineno { -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none; }
+
+.lineno::-moz-selection { background-color: transparent; }
+
+/* Mozilla specific */
+.lineno::selection { background-color: transparent; }
+
+/* Other major browsers */
+/****************************************************************
+ *
+ *  Page layout configuration
+ *
+****************************************************************/
+* :not(li, ul) { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Quicksand'; }
+
+html, body { height: 100%; }
+
+.main-wrapper { font-size: 24px; display: flex; height: 100%; }
+
+.main-wrapper .sidebar { width: 15%; margin-right: 8px; display: flex; flex-direction: column; }
+
+.main-wrapper .sidebar ul { width: 100%; margin: 0; padding: 0; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+.main-wrapper .sidebar li { width: 100%; list-style: none; }
+
+.main-wrapper .sidebar li a { display: inline-block; text-decoration: none; width: 100%; text-align: center; padding-top: 16px; padding-bottom: 16px; background: white; color: black; }
+
+.main-wrapper .sidebar li a:hover { background: black; color: white; }
+
+.main-wrapper .main { flex: 1; width: 100%; display: flex; flex-direction: column; }
+
+.main-wrapper .main .main-title { padding: 16px; color: white; background: black; font-weight: bolder; }
+
+.main-wrapper .main .content { display: flex; flex: 1; }
+
+.main-wrapper .main .footer { text-align: center; }
+
+a { display: inline-block; text-decoration: underline; text-decoration-style: dotted; color: black; background: white; padding: 8px; }
+
+a:hover { color: white; background: black; }
+
+p { margin-top: 16px; }
+
+.pager { display: flex; justify-content: center; }
+
+.pager li { list-style: none; }
+
+/****************************************************************
+ *
+ *  Home layout configuration
+ *
+****************************************************************/
+.posts-container { padding: 16px; width: 100%; }
+
+.posts-container .post-compact { padding-top: 32px; padding-bottom: 32px; border-bottom: 2px solid black; }
+
+.posts-container .post-compact .post-title a { font-size: 32px; width: 100%; display: inline-block; text-decoration: none; width: 100%; padding: 16px; background: white; color: black; }
+
+.posts-container .post-compact .post-title a:hover { background: black; color: white; }
+
+.posts-container .post-compact .post-meta { margin-top: 16px; display: flex; }
+
+.posts-container .post-compact .post-meta .post-posted-at { padding: 16px; }
+
+.posts-container .post-compact .post-meta .post-tags { flex: 1; display: flex; justify-content: right; }
+
+.posts-container .post-compact .post-meta .post-tags .tag { padding: 16px; border: 2px solid black; border-radius: 16px; text-decoration: none; background: white; color: black; margin-left: 8px; }
+
+.posts-container .post-compact .post-meta .post-tags .tag:hover { background: black; color: white; }
+
+/****************************************************************
+ *
+ *  Post layout configuration
+ *
+****************************************************************/
+.post { padding: 16px; width: 100%; }
+
+.post .post-title { margin-left: 16px; font-size: 52px; }
+
+.post .post-meta { margin-top: 16px; display: flex; }
+
+.post .post-meta .post-posted-at { padding: 16px; }
+
+.post .post-meta .post-tags { flex: 1; display: flex; justify-content: right; }
+
+.post .post-meta .post-tags .tag { padding: 16px; border: 2px solid black; border-radius: 16px; text-decoration: none; background: white; color: black; margin-left: 8px; }
+
+.post .post-meta .post-tags .tag:hover { background: black; color: white; }
+
+.post .post-content { margin-left: 32px; }
+
+.post .post-content *:not(:last-child) { margin-bottom: 16px; }
+
+.post .post-content h1, .post .post-content h2, .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6 { margin-top: 48px; }
+
+.post .post-content blockquote { margin-block: 48px; padding-block: 16px; padding-left: 48px; border-left: 8px solid black; }
+
+.post .post-content blockquote p { margin: 0; }
+
+.post .post-content img { display: block; margin-inline: auto; width: 50%; }
+
+.post .post-content .rouge-gutter { display: block; margin-right: 24px; margin-bottom: 0; }
+
+/****************************************************************
+ *
+ *  Tag layout configuration
+ *
+****************************************************************/
+/****************************************************************
+ *
+ *  Tags layout configuration
+ *
+****************************************************************/
+.tag-container { margin-block: 64px; }
+
+.tag-container .tag { padding: 16px; border: 2px solid black; border-radius: 16px; text-decoration: none; background: white; color: black; margin-left: 8px; }
+
+.tag-container .tag .counter { margin-inline-start: 32px; }
+
+.tag-container .tag:hover { background: black; color: white; }
+
+/****************************************************************
+ *
+ *  Tag layout configuration
+ *
+****************************************************************/
+/****************************************************************
+ *
+ *  Categories layout configuration
+ *
+****************************************************************/
+.category-container { padding: 16px; }
+
+.category-container .category { padding: 16px; }
+
+.category-container .category a .counter { margin-inline-start: 32px; }
+
+/*# sourceMappingURL=style.css.map */
