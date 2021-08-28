@@ -247,6 +247,8 @@ p { margin-top: 16px; }
 
 .pager li { list-style: none; }
 
+.center { text-align: center; }
+
 /****************************************************************
  *
  *  Home layout configuration
